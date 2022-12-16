@@ -1,9 +1,22 @@
+"""
+Helper file that takes care of Google Docs operations needed on a particular Google Doc instance. 
+
+Features available: 
+- Creation of a Table object in Google Docs 
+- Appending Rows to a Table object in Google Docs
+- Checking the OAuth Files for a Google API access
+
+"""
+
+__author__ = "Alen Jo" 
+__copyright__ = "Copyright 2022, Alen Jo"
+__version__ = "1.0.0"
+
 import time 
 from progress.bar import IncrementalBar
 import os 
 from gdoctableapppy import gdoctableapp
 import secrets, string
-
 
 def createTable(oauthCreds, docID, **kwargs): 
     """
