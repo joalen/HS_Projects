@@ -1,9 +1,23 @@
+"""
+Creates a reference document that maps one column for images while the other column designates the chapter and page associated with a PDF.
+
+Features available: 
+ - Extract images from a PDF 
+ - Custom configurations (PDF path & Directory for extracted images) using a YAML file 
+ - Write to Microsoft Word Document or Google Docs
+ - Console-based GUI
+"""
+
+__author__ = "Alen Jo" 
+__copyright__ = "Copyright 2022, Alen Jo" 
+
 import fitz
 import os.path 
 from progress.bar import IncrementalBar
 import time 
 from ruamel.yaml import YAML
 
+# edit these properties if you do NOT want to use a YAML file
 pdfLocation = ""
 imagesDir = ""
 yaml = YAML() 
