@@ -1,0 +1,3 @@
+configurations:
+  filepath: {insert file path to desired PDF here}
+  compileDestination: {insert file path to save extracted images}
